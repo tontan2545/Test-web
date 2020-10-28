@@ -1,0 +1,7 @@
+Set up requirement:
+  MongoDB
+  Node JS
+  Nodemon
+  npm
+When starting a local host:
+  type "nodemon app.js" in terminal and search for "http://localhost:4000/" in your browser
