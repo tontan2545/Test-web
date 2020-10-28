@@ -5,3 +5,13 @@ Set up requirement:
   npm
 When starting a local host:
   type "nodemon app.js" in terminal and search for "http://localhost:4000/" in your browser
+
+Files:
+  bin/ & node_modules/ & package.json & package-lock.json => not important
+  models/ => user.js defines what properties each id would have (username, password, national id, etc.)
+  public/ => contains all the frontend stuff (except tags)
+  routes/ =>  auth.js: catches post and process
+              index.js: redirects GET 
+  views/ => contains all the .pug file (.html without <> and </>)
+  app.js => sets up express js
+  db.js => connects mondo database to our website
