@@ -1,13 +1,15 @@
-extend layout
+extend layoutbg
 block content
-  .form-container
-    form(class="form-signin" method="POST" action="/auth/login")
-      h2 Please Login
-      .form-group
-        label( for="username" class="sr-only") Username
-        input(type="text" name="username" id="username" class="form-control" placeholder="Username" required)
-      .form-group
-        label(for="password" class="sr-only") Password
-        input(type="password" name="password" id="password" class="form-control" placeholder="Password" required)
-      button(class="btn btn-primary btn-block" type="submit") Login
-      a(href="/register", class="btn btn-link") Don't have an account?
+  .all
+    h1(class = "head" style = {color:"white"}) Chula Democracy
+    .form-container
+      form(class="form-signin" method="POST" action="/auth/login")
+        p(class = "error")=message
+        .form-group
+          label( for="username" class="sr-only") Username
+          input(type="text" name="username" id="username" class="form-control" placeholder="Student ID" required)
+        .form-group
+          label(for="password" class="sr-only") Password
+          input(type="password" name="password" id="password" class="form-control" placeholder="Password" required)
+        button(class="btn btn-primary btn-block" type="submit" aria-pressed="true") Login
+        a(href="/register", class="btn btn-link") Register
